@@ -35,13 +35,13 @@ export default function HowItWorks() {
           ))}
         </div>
 
-        <div className="relative mt-xxl aspect-[21/9] w-full overflow-hidden">
+        <div className="relative mt-xxl w-full overflow-hidden h-48 sm:h-64 md:h-80 lg:h-[360px]">
           <Image
-            src="/images/how-it-works-guidance.jpg"
-            alt="Apex DIY technician offering on-site guidance to a customer working under the hood of their car"
+            src="/images/apexdiy-bayroom.png"
+            alt="Apex DIY workshop bay"
             fill
-            sizes="(min-width: 1024px) 1200px, 100vw"
-            className="object-cover"
+            sizes="(min-width: 1024px) 1200px, (min-width:768px) 800px, 100vw"
+            className="object-cover object-center"
           />
         </div>
       </div>

@@ -54,10 +54,11 @@ const themeInitScript = `
 (function() {
   try {
     var stored = window.localStorage.getItem('apex-diy-theme');
-    var theme = stored === 'dark' ? 'dark' : 'light';
+    // Default to dark theme when no stored preference exists (user requested)
+    var theme = stored === 'light' ? 'light' : 'dark';
     document.documentElement.setAttribute('data-theme', theme);
   } catch (e) {
-    document.documentElement.setAttribute('data-theme', 'light');
+    document.documentElement.setAttribute('data-theme', 'dark');
   }
 })();
 `;

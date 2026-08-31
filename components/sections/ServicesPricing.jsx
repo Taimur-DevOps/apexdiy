@@ -23,7 +23,8 @@ export default function ServicesPricing() {
         />
         <div className="mt-xxl">
           <div className="overflow-hidden rounded-sm border border-line">
-            <table className="w-full border-collapse text-left">
+            <div className="overflow-x-auto">
+              <table className="min-w-[720px] w-full border-collapse text-left">
               <thead>
                 <tr className="bg-primary">
                   <th className="px-md py-sm text-[15px] font-bold text-on-primary">Duration</th>
@@ -60,6 +61,7 @@ export default function ServicesPricing() {
               </tbody>
             </table>
           </div>
+          </div>
 
           <p className="mt-lg text-[15px]">
             <strong>Need more time?</strong> You can extend your session directly from your bay, subject to availability. For long-term project cars, ask us about our <strong>weekly project rental</strong> rates.
@@ -69,7 +71,8 @@ export default function ServicesPricing() {
           <p className="text-[14px] text-fg-muted">Add to Any Bay Rental</p>
 
           <div className="mt-md overflow-hidden rounded-sm border border-line">
-            <table className="w-full border-collapse text-left">
+            <div className="overflow-x-auto">
+              <table className="min-w-[480px] w-full border-collapse text-left">
               <thead>
                 <tr className="bg-primary">
                   <th className="px-md py-sm text-[15px] font-bold text-on-primary">Tool</th>
@@ -95,6 +98,7 @@ export default function ServicesPricing() {
                 </tr>
               </tbody>
             </table>
+          </div>
           </div>
 
           <div className="mt-lg rounded-sm bg-primary/10 p-md text-[14px] text-fg-muted">
