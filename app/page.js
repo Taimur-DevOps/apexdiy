@@ -16,7 +16,7 @@ export default function HomePage() {
       <ServicesPricing />
       <HowItWorks />
       <Facility />
-      <Gallery />
+      {/* <Gallery /> */}
       <FAQ />
       {/* <Reviews /> */}
       <Contact />

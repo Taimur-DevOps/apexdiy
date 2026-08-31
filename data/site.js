@@ -21,7 +21,7 @@ export const siteConfig = {
       addressLocality: "Melbourne",
       addressRegion: "VIC",
       addressCountry: "AU",
-      full: "123 Torque Lane, Melbourne, VIC",
+      // full: "123 Torque Lane, Melbourne, VIC",
     },
     hours: [
       { days: "Monday – Saturday", time: "8:00 AM – 8:00 PM" },
