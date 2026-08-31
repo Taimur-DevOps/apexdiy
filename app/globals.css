@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Brand & accent (fixed across themes) */
+  --color-primary: #ffed00;
+  --color-primary-deep: #e6d200;
+  --color-on-primary: #000000;
+
+  /* Semantic status colors (fixed across themes) */
+  --color-error: #be6464;
+  --color-warning: #f0ad4e;
+  --color-success: #8dc572;
+  --color-info: #337ab7;
+  --color-link: #0000ee;
+
+  /* Raw surface tokens - light mode values */
+  --color-canvas: #ffffff;
+  --color-surface-soft: #f7f7f7;
+  --color-surface-dark: #000000;
+  --color-surface-deep: #111111;
+  --color-hairline: #f2f2f2;
+  --color-hairline-strong: #000000;
+  --color-divider-dark: rgba(255, 255, 255, 0.16);
+
+  /* Raw text tokens */
+  --color-ink: #000000;
+  --color-body: #222222;
+  --color-charcoal: #333333;
+  --color-mute: #666666;
+  --color-ash: #8a8a8a;
+  --color-stone: #c4c4c4;
+  --color-on-dark: #ffffff;
+  --color-on-dark-mute: rgba(255, 255, 255, 0.72);
+
+  /* Semantic theme-aware tokens: LIGHT MODE (default) */
+  --bg: var(--color-canvas);
+  --bg-soft: var(--color-surface-soft);
+  --bg-invert: var(--color-surface-dark);
+  --bg-invert-deep: var(--color-surface-deep);
+  --fg: var(--color-ink);
+  --fg-secondary: var(--color-body);
+  --fg-muted: var(--color-mute);
+  --fg-invert: var(--color-on-dark);
+  --fg-invert-mute: var(--color-on-dark-mute);
+  --line: var(--color-hairline);
+  --line-strong: var(--color-hairline-strong);
+
+  --font-display: "Manrope", system-ui, -apple-system, sans-serif;
+}
+
+[data-theme="dark"] {
+  /* Semantic theme-aware tokens: DARK MODE
+     Canvas and storytelling surfaces invert; the yellow accent never changes. */
+  --bg: var(--color-surface-dark);
+  --bg-soft: var(--color-surface-deep);
+  --bg-invert: var(--color-canvas);
+  --bg-invert-deep: var(--color-surface-soft);
+  --fg: var(--color-on-dark);
+  --fg-secondary: var(--color-on-dark-mute);
+  --fg-muted: var(--color-on-dark-mute);
+  --fg-invert: var(--color-ink);
+  --fg-invert-mute: var(--color-body);
+  --line: var(--color-divider-dark);
+  --line-strong: var(--color-on-dark);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-display);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Visible focus states everywhere (accessibility) */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+}
