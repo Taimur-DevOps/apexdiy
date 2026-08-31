@@ -24,12 +24,12 @@ export default function Contact() {
 
         <div className="mt-xxl grid gap-xxl lg:grid-cols-2">
           <div className="flex flex-col gap-lg">
-            <div className="flex gap-sm">
+            {/* <div className="flex gap-sm">
               <MapPin size={22} className="mt-[2px] shrink-0 text-fg" aria-hidden="true" />
               <address className="not-italic text-[16px] leading-[1.5] text-fg-secondary">
                 {business.address.full}
               </address>
-            </div>
+            </div> */}
 
             <div className="flex gap-sm">
               <Clock size={22} className="mt-[2px] shrink-0 text-fg" aria-hidden="true" />
