@@ -24,11 +24,10 @@ export const siteConfig = {
       // full: "123 Torque Lane, Melbourne, VIC",
     },
     hours: [
-      { days: "Monday – Saturday", time: "8:00 AM – 8:00 PM" },
-      { days: "Sunday", time: "Closed" },
+      { days: "Monday – Sunday", time: "8:00 AM – 8:00 PM" },
     ],
     email: "connect@apexdiy.com.au",
-    phone: "0410995584",
+    phone: "+61 410 995 584",
     phoneHref: "tel:+61410995584",
     emailHref: "mailto:connect@apexdiy.com.au",
   },
