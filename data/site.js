@@ -7,7 +7,7 @@ export const siteConfig = {
   tagline: "Work On Your Car Your Way",
   description:
     "Rent professional workshop bays, hoists, and tools at Apex DIY Melbourne.",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.apexdiy.com.au",
+  url: (process.env.NEXT_PUBLIC_SITE_URL || "https://www.apexdiy.com.au").replace(/\/$/, ""),
 
   // Booking CTA destination. Currently a placeholder anchor since there is
   // no booking system yet (Phase 1). Change this single value when the

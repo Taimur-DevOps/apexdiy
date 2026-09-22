@@ -14,6 +14,13 @@ export const metadata = {
   },
   description: siteConfig.seo.description,
   keywords: siteConfig.seo.keywords,
+  applicationName: siteConfig.name,
+  category: "automotive services",
+  creator: siteConfig.name,
+  publisher: siteConfig.name,
+  formatDetection: {
+    telephone: true,
+  },
   alternates: {
     canonical: "/",
   },
